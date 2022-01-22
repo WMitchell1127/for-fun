@@ -4,7 +4,7 @@ class App extends React.Component{
         super()
         this.state = {
             todos : [],
-            font : ''
+            font : 'default-txt'
         }
         this.getTodos = this.getTodos.bind(this)
         this.changeText = this.changeText.bind(this)
@@ -19,7 +19,6 @@ class App extends React.Component{
         })
     }
     changeText(font){
-        console.log("Am I even firing?")
         this.setState({
               ...this.state,
             font  
@@ -27,11 +26,9 @@ class App extends React.Component{
     }
     render(){
         let allMyTodos = this.state.todos.map(todo => <RenderTodos todo={todo} key={todo.id} getTodos={this.getTodos}/>)
-        console.log(this.state.font)
         return(
             <div className={this.state.font}>
-                <AddTodo getTodos={this.getTodos}/>
-                <TextController changeText={this.changeText} text={this.state.font}/>
+                <AddTodo getTodos={this.getTodos} changeText={this.changeText} text={this.state.font}/>
                 { this.state.todos.length > 0 ? allMyTodos : <h3>There is nothing left to do!</h3> }
             </div>
         )

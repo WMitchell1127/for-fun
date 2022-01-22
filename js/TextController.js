@@ -33,11 +33,14 @@ class TextController extends React.Component{
         return(
             <div>
                 <form onSubmit={this.handleSubmit}>
-                   <select value={this.state.value} onChange={this.handleChange}>
-                        <option value=""></option>
+                    <label>
+                      <select value={this.state.value} onChange={this.handleChange}>
+                        <option value="default-txt">Default</option>
                         <option value="shadow-txt">Handwritten</option>
                         <option value="hm-txt">More Formal</option>
-                    </select> 
+                    </select>   
+                    </label>
+                   <input type="submit" value="Change Text"/>
                 </form> 
             </div>
         )

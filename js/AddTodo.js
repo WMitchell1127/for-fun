@@ -27,6 +27,7 @@ class AddTodo extends React.Component{
         return(
             <div>
                 <h1>Things to do!</h1>
+                <StyleController changeText={this.props.changeText} text={this.props.font} />
                 <form onSubmit={this.handleSubmit}>
                     <input type="text" name="task" value={this.state.task} onChange={this.handleChange} required />
                     <button type="submit">Add Task</button>
