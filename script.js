@@ -1,0 +1,5 @@
+
+const ADD_TODO = 'ADD_TODO'
+const DELETE_TODO = 'DELETE_TODO'
+const UPDATE_TODOS = 'UPDATE_TODOS'
+
