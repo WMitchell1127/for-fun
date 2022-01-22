@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "HindiMaduri";
+    src: url('../fonts/HindiMadurai/HindMadurai-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HindiMaduri";
+    src: url('../fonts/HindiMadurai/HindMadurai-SemiBold.ttf') format('truetype');
+    font-weight:bolder;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: "HindiMaduri";
+    src: url('../fonts/HindiMadurai/HindMadurai-Bold.ttf') format('truetype');
+    font-weight:bold;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: "HindiMaduri";
+    src: url('../fonts/HindiMadurai/HindMadurai-Light.ttf') format('truetype');
+    font-weight:lighter;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'ShadowsIntoLight';
+    src: url('../fonts/ShadowsIntoLight/ShadowsIntoLight-Regular.ttf') format('truetype');
+}
+
+
+
