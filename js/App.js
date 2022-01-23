@@ -4,10 +4,12 @@ class App extends React.Component{
         super()
         this.state = {
             todos : [],
-            font : 'default-txt'
+            font : 'default-txt',
+            theme : 'default-theme'
         }
         this.getTodos = this.getTodos.bind(this)
         this.changeText = this.changeText.bind(this)
+        this.changeTheme = this.changeTheme.bind(this)
     }
     componentDidMount(){
         this.getTodos()
@@ -24,11 +26,17 @@ class App extends React.Component{
             font  
             })
     }
+    changeTheme(theme){
+        this.setState({
+              ...this.state,
+            theme  
+            })
+    }
     render(){
-        let allMyTodos = this.state.todos.map(todo => <RenderTodos todo={todo} key={todo.id} getTodos={this.getTodos}/>)
+        let allMyTodos = this.state.todos.map(todo => <RenderTodos todo={todo} key={todo.id} getTodos={this.getTodos} theme={this.state.theme}/>)
         return(
-            <div className={this.state.font}>
-                <AddTodo getTodos={this.getTodos} changeText={this.changeText} text={this.state.font}/>
+            <div className={`${this.state.font} ${this.state.theme} app`}>
+                <AddTodo getTodos={this.getTodos} changeText={this.changeText} text={this.state.font} changeTheme={this.changeTheme} theme={this.state.theme}/>
                 { this.state.todos.length > 0 ? allMyTodos : <h3>There is nothing left to do!</h3> }
             </div>
         )

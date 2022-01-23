@@ -1,0 +1,64 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+}
+#root {
+    width: 100vw;
+    min-height: 100vh;
+}
+.app {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.title {
+    padding-top: 1.75em;
+}
+
+.style-control-wrapper {
+    padding: 0.75em;
+    min-height: 9em;
+}
+
+.f-input {
+    padding: 0.5em;
+    margin-right: 0.35em;
+}
+
+.render-todo-wrapper {
+    padding: .70em;
+    min-height: 6.5em;
+    padding-left: 3em;
+}
+
+h3 {
+    display: inline;
+    margin-right: 0.35em;
+}
+
+.btn {
+    padding: 0.25em;
+    margin: 0.25em;
+    font-size: 1em;
+    outline: none;
+    border: 1px solid white;
+}
+
+.edit {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.add-todo-main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-task-form {
+    margin-bottom: 3em;
+}
+
+.add-task-form > input {
+    margin-left: 2em;
+}

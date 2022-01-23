@@ -1,9 +1,43 @@
+@import './styles.css';
 @import './fonts.css';
 @import './text.css';
+@import './default-theme.css';
+@import './purple-theme.css';
+@import './green-theme.css';
 
 *, html, body, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    /* default */
+    --dark-default: rgb(27, 12, 1);
+    --mid-dark-default: rgb(85, 36, 3);
+    --mid-default: rgb(158, 67, 6);
+    --light-default: rgb(246, 199, 167);
+    --white-default: rgb(238, 232, 228);
+    --danger-default: rgb(241, 33, 33);
+    --success-default: rgb(84, 172, 84);
+    --alert-default:rgb(241, 213, 140);
+    /* purple */
+    --dark-purple: rgb(31, 1, 31);
+    --mid-dark-purple:rgb(93, 3, 93);
+    --mid-purple:rgb(170, 83, 170);
+    --light-purple:rgb(243, 164, 243);
+    --white-purple:rgb(236, 218, 236);
+    --danger-purple: rgb(255, 38, 0);
+    --success-purple: rgb(102, 226, 71);
+    --alert-purple: rgb(251, 255, 0);
+    /* green  */
+    --dark-green: rgb(1, 32, 16);
+    --mid-dark-green:rgb(5, 92, 47);
+    --mid-green:rgb(94, 195, 143);
+    --light-green:rgb(178, 241, 208);
+    --white-green:rgb(230, 241, 235);
+    --danger-green: rgb(245, 7, 54);
+    --success-green:rgb(7, 248, 7);
+    --alert-green:rgb(251, 251, 11);
 }
 

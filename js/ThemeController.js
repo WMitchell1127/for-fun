@@ -1,5 +1,4 @@
-
-class TextController extends React.Component{
+class ThemeController extends React.Component{
     constructor(props){
         super(props)
         this.state = {
@@ -12,7 +11,7 @@ class TextController extends React.Component{
     componentDidMount(){
         this.setState({
             ...this.state,
-            value : this.props.text
+            value : this.props.theme
         })
     }
     handleChange(e){
@@ -26,8 +25,8 @@ class TextController extends React.Component{
         e.preventDefault()
         this.makeAChange(this.state.value)
     }
-    makeAChange(text){
-        this.props.changeText(text)
+    makeAChange(theme){
+        this.props.changeTheme(theme)
     }
     render(){
         return(
@@ -35,12 +34,12 @@ class TextController extends React.Component{
                 <form onSubmit={this.handleSubmit}>
                     <label>
                       <select className="f-input" value={this.state.value} onChange={this.handleChange}>
-                        <option value="default-txt">Default</option>
-                        <option value="shadow-txt">Handwritten</option>
-                        <option value="hm-txt">More Formal</option>
+                        <option value="default-theme">Default</option>
+                        <option value="purple-theme">Purple</option>
+                        <option value="green-theme">Green</option>
                     </select>   
                     </label>
-                   <input className={`btn ${this.props.theme} submit-btn`} type="submit" value="Change Text"/>
+                   <input className={`btn ${this.props.theme} submit-btn`} type="submit" value="Change Theme"/>
                 </form> 
             </div>
         )

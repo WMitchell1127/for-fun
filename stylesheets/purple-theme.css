@@ -1,0 +1,55 @@
+
+
+.purple-theme .app {
+    background-color: var( --light-purple);
+    color: var( --dark-purple);
+}
+
+.purple-theme .add-todo-main-div {
+    background-color: var(--mid-purple);
+    color: var(--white-purple);
+}
+
+.purple-theme .render-todo-wrapper {
+    background-color: var(--light-purple);
+}
+
+.purple-theme .change-style-btn {
+    background-color: var( --alert-purple);
+}
+
+.purple-theme .change-style-btn:hover {
+    background-color: gold;
+}
+
+.purple-theme .close-style-input {
+    background-color: var( --danger-purple)
+}
+
+.purple-theme .close-style-input:hover {
+    background-color: pink;
+}
+
+.purple-theme .submit-btn {
+    background-color: var( --success-purple)
+}
+
+.purple-theme .submit-btn:hover {
+    background-color: green;
+}
+
+.purple-theme .delete-btn {
+    background-color: var( --danger-purple)
+}
+
+.purple-theme .delete-btn:hover {
+    background-color: pink;
+}
+
+.purple-theme .edit-btn {
+    background-color: var( --alert-purple)
+}
+
+.purple-theme .edit-btn:hover {
+    background-color: gold;
+}

@@ -1,0 +1,54 @@
+
+.green-theme .app {
+    background-color: var( --light-green);
+    color: var( --dark-green);
+}
+
+.green-theme .add-todo-main-div {
+    background-color: var(--mid-green);
+    color: var(--white-green);
+}
+
+.green-theme .render-todo-wrapper {
+    background-color: var(--light-green);
+}
+
+.green-theme .change-style-btn {
+    background-color: var( --alert-green);
+}
+
+.green-theme .change-style-btn:hover {
+    background-color: gold;
+}
+
+.green-theme .close-style-input {
+    background-color: var( --danger-green)
+}
+
+.green-theme .close-style-input:hover {
+    background-color: pink;
+}
+
+.green-theme .submit-btn {
+    background-color: var( --success-green)
+}
+
+.green-theme .submit-btn:hover {
+    background-color: green;
+}
+
+.green-theme .delete-btn {
+    background-color: var( --danger-green)
+}
+
+.green-theme .delete-btn:hover {
+    background-color: pink;
+}
+
+.green-theme .edit-btn {
+    background-color: var( --alert-green)
+}
+
+.green-theme .edit-btn:hover {
+    background-color: gold;
+}

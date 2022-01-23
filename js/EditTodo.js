@@ -35,8 +35,8 @@ class EditTodo extends React.Component{
     render(){
         return(
             <form onSubmit={this.handleSubmit}>
-                <input type="text" name="task" value={this.state.task} onChange={this.handleChange} placeholder={this.state.task} />
-                <button type="submit">Change</button>
+                <input className="f-input" type="text" name="task" value={this.state.task} onChange={this.handleChange} placeholder={this.state.task} />
+                <button className={`btn ${this.props.theme} submit-btn`} type="submit">Change</button>
             </form>
         )
     }

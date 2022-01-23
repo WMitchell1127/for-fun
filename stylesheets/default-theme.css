@@ -1,0 +1,58 @@
+
+
+.default-theme .app {
+    background-color: var( --light-default);
+    color: var( --dark-default);
+}
+
+.default-theme .add-todo-main-div {
+    background-color: var(--mid-default);
+    color: var(--white-default);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.default-theme .render-todo-wrapper {
+    background-color: var(--light-default);
+}
+
+.default-theme .change-style-btn {
+    background-color: var( --alert-default);
+}
+
+.default-theme .change-style-btn:hover {
+    background-color: gold;
+}
+
+.default-theme .close-style-input {
+    background-color: var( --danger-default)
+}
+
+.default-theme .close-style-input:hover {
+    background-color: pink;
+}
+
+.default-theme .submit-btn {
+    background-color: var( --success-default)
+}
+
+.default-theme .submit-btn:hover {
+    background-color: green;
+}
+
+.default-theme .delete-btn {
+    background-color: var( --danger-default)
+}
+
+.default-theme .delete-btn:hover {
+    background-color: pink;
+}
+
+.default-theme .edit-btn {
+    background-color: var( --alert-default)
+}
+
+.default-theme .edit-btn:hover {
+    background-color: gold;
+}
