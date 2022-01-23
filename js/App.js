@@ -13,6 +13,7 @@ class App extends React.Component{
     }
     componentDidMount(){
         this.getTodos()
+        document.body.classList = `${this.state.theme} body`
     }
     getTodos(){
         this.setState({

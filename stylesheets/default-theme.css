@@ -1,4 +1,6 @@
-
+.default-theme .body {
+    background-color: var( --light-default);
+}
 
 .default-theme .app {
     background-color: var( --light-default);

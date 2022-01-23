@@ -24,6 +24,7 @@ class ThemeController extends React.Component{
     handleSubmit(e){
         e.preventDefault()
         this.makeAChange(this.state.value)
+        document.body.classList = `${this.state.value} body`
     }
     makeAChange(theme){
         this.props.changeTheme(theme)
