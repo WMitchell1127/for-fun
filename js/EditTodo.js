@@ -33,10 +33,11 @@ class EditTodo extends React.Component{
         this.props.showEdit()
     }
     render(){
+        const theme = store.getState().theme
         return(
             <form onSubmit={this.handleSubmit}>
                 <input className="f-input" type="text" name="task" value={this.state.task} onChange={this.handleChange} placeholder={this.state.task} />
-                <button className={`btn ${this.props.theme} submit-btn`} type="submit">Change</button>
+                <button className={`btn ${theme} submit-btn`} type="submit">Change</button>
             </form>
         )
     }

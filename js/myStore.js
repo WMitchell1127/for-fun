@@ -1,6 +1,8 @@
 const ADD_TODO = 'ADD_TODO'
 const DELETE_TODO = 'DELETE_TODO'
 const UPDATE_TODO = 'UPDATE_TODO'
+const SET_FONT = 'SET_FONT'
+const SET_THEME = 'SET_THEME'
 
 const addTodo = (todo) =>{
     todo.id = uuidv4()
@@ -23,8 +25,24 @@ const updateTodo = (todo) =>{
     }
 }
 
+const setFont = (font) =>{
+    return {
+        type: SET_FONT,
+        payload: font
+    }
+}
+
+const setTheme = (theme) =>{
+    return {
+        type: SET_THEME,
+        payload: theme
+    }
+}
+
 const initialState = {
-    todos
+    todos,
+    font : 'default-txt',
+    theme : 'default-theme'
 }
 
 const rootReducer = (state = initialState, action) =>{
@@ -50,6 +68,16 @@ const rootReducer = (state = initialState, action) =>{
             return {
                 ...state,
                 todos : youveChanged
+            }
+        case SET_FONT:
+            return {
+                ...state,
+                font : action.payload
+            }
+        case SET_THEME:
+            return {
+                ...state,
+                theme : action.payload
             }
         default:
             return state

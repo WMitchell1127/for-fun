@@ -23,8 +23,8 @@ body {
 }
 
 .render-todo-wrapper {
-    padding: .70em;
-    min-height: 6.5em;
+    /* padding: .70em;
+    min-height: 6.5em; */
     padding-left: 3em;
 }
 

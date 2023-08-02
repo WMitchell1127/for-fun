@@ -19,7 +19,7 @@ class AddTodo extends React.Component{
     }
     handleSubmit(e){
         e.preventDefault()
-        store.dispatch(addTodo(this.state))
+        store.dispatch(addTodo({task : this.state.task}))
         this.props.getTodos()
         this.setState({
             ...this.state,
@@ -35,16 +35,17 @@ class AddTodo extends React.Component{
         })
     }
     render(){
+        const theme = store.getState().theme
         return(
-            <div className={`${this.props.theme} add-todo-main-div`}>
-                <h1 className={`${this.props.theme} title`}>Things to do!</h1>
-                <div className={`${this.props.theme} style-control-wrapper`}>
-                   { this.state.showStyleController ? <StyleController changeText={this.props.changeText} text={this.props.font} toggleStyle={this.toggleStyle} changeTheme={this.props.changeTheme} theme={this.props.theme}/> : <button className={`btn ${this.state.theme} change-style-btn`}onClick={this.toggleStyle}>Change Style</button>} 
+            <div className={`${theme} add-todo-main-div`}>
+                <h1 className={`${theme} title`}>Things to do!</h1>
+                <div className={`${theme} style-control-wrapper`}>
+                   { this.state.showStyleController ? <StyleController changeText={this.props.changeText} toggleStyle={this.toggleStyle} /> : <button className={`btn ${theme} change-style-btn`}onClick={this.toggleStyle}>Change Style</button>} 
                 </div>
                 
                 <form className="add-task-form" onSubmit={this.handleSubmit}>
                     <input className="f-input" type="text" name="task" value={this.state.task} onChange={this.handleChange} required />
-                    <button className={`btn ${this.state.theme} submit-btn submit-task-btn`} type="submit">Add Task</button>
+                    <button className={`btn ${theme} submit-btn submit-task-btn`} type="submit">Add Task</button>
                 </form>
             </div>
         )

@@ -23,7 +23,7 @@ class ThemeController extends React.Component{
     }
     handleSubmit(e){
         e.preventDefault()
-        this.makeAChange(this.state.value)
+        store.dispatch(setTheme(this.state.value))
         document.body.classList = `${this.state.value} body`
     }
     makeAChange(theme){
@@ -40,7 +40,7 @@ class ThemeController extends React.Component{
                         <option value="green-theme">Green</option>
                     </select>   
                     </label>
-                   <input className={`btn ${this.props.theme} submit-btn`} type="submit" value="Change Theme"/>
+                   <input className={`btn ${store.getState().theme} submit-btn`} type="submit" value="Change Theme"/>
                 </form> 
             </div>
         )
